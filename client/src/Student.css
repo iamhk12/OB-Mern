@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+
+footer {
+    font-size: 13px;
+    width: 100vw;
+    position: absolute;
+    bottom: 15px;
+    display: block;
+    text-align: center;
+    color: white;
+    line-height: 1.2rem;
+}
+
+.studpage {
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
+    padding: 60px;
+    /* background-color: red; */
+    justify-content: space-evenly;
+}
+
+.stleft {
+    display: flex;
+    /* background-color: blue; */
+    width: 45%;
+}
+
+.stright {
+    display: flex;
+    /* background-color: aqua; */
+    width: 50%;
+    height: 600px;
+    background-color: #0e1424;
+    justify-content: center;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    border: 1px solid white;
+    background: #0e1424;
+    background: linear-gradient(63deg, #0e1424 0%, #22325c 100%);
+}
+
+.allcourses {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+.allcourses h3 {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.allcourses a {
+    padding: 30px;
+}
+
+.mypro {
+    z-index: 1;
+    display: flex;
+    font-family: 'Montserrat', cursive;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: #e0e0e065; */
+    color: white;
+    /* backdrop-filter: blur(30px) brightness(200%); */
+    border-radius: 40px;
+    text-shadow: #000000 0px 0px 15px;
+}
+
+.inmypro {
+    width: 55vw;
+    height: 80%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+
+}
+
+.mypro .myproright {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+
+    justify-content: center;
+}
+
+.mypro .myproright .det {
+    position: relative;
+    top: -20px;
+}
+
+.mypro .myproright .det p {
+    font-size: 20px;
+}
+
+.mypro .myproright .det p span {
+    font-size: 22px;
+    font-weight: 800;
+    color: #00b3ff;
+
+}
+
+
+.mypro .mpleft {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mypro .mpleft img {
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: #000000 0px 0px 50px;
+}
+
+@media screen and (max-width:1080px) {
+    .inmypro {
+        position: relative;
+        width: 95vw;
+        height: 90%;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .mypro .mpleft {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .mypro .mpleft img {
+        width: 30%;
+    }
+
+    .mypro .myproright .det p {
+        font-size: 13px;
+    }
+
+    .mypro .myproright .det p span {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .mypro .myproright {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 50px;
+        position: relative;
+        left: -30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .studpage {
+        flex-direction: column;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stleft {
+        width: 90vw;
+        margin: 50px;
+    }
+
+    .stright {
+        width: 90vw;
+        margin-bottom: 50px;
+        font-size: 15px;
+    }
+
+    footer {
+        position: static;
+        font-size: 10px;
+        margin-bottom: 20px;
+
+    }
+
+    .allcourses a {
+        font-size: 12px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+}
+
+footer {
+    position: static;
+    font-size: 10px;
+
+}
+
+@media screen and (min-width:1080px) {
+
+    .studpage {
+        height: 88vh;
+    }
+}

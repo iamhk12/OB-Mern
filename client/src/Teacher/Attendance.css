@@ -1,0 +1,125 @@
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.optionlabel{
+    color: white;
+}
+
+.select-box {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.input-date {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.table-attendance {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-header,
+.table-data {
+    border: 1px solid white;
+    padding: 8px;
+    color: white;
+}
+
+.table-header {
+    background-color: gray;
+    color: white;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.btn-submit {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.btn-present {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-absent {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.optionlabel{
+    color: white;
+}
+
+.table-attendance {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+
+select {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: white;
+}
+
+select option {
+    background-color: #333;
+    color: white;
+}
+
+
+input[type="date"] {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: white;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #fff;
+    color: rgb(255, 0, 0);
+}
+
+
