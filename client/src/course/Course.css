@@ -73,11 +73,11 @@
     border-radius: 10px;
     border: 1px solid white;
     box-shadow: #0e1424 0px 0px 15px;
-    transition: all 2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .allcontents a:hover {
-    background: linear-gradient(63deg, #0e1424 0%, #2b4481 50%,#0e1424 100% );
+    transform: scale(1.11);
 }
 
 .rightin {

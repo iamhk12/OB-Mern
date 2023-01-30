@@ -16,9 +16,9 @@ const Ds = () => {
                 <div className="cpin">
                     <div className="cpleft">
                         <div className="allcontents">
-                            <a href="/mathslec">Lecture PPTs</a>
-                            <a href="/mathsvids">Video lectures</a>
-                            <a href="/mathsnotes">Notes</a>
+                            <a href="/ds/lecppt">Lecture PPTs</a>
+                            <a href="/ds/vidlec">Video lectures</a>
+                            <a href="/ds/notes">Notes</a>
                         </div>
                     </div>
                     <div className="cpright">

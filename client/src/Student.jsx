@@ -39,11 +39,11 @@ const Student = () => {
                                     <form action="">
                                         <div className="det">
                                             {/* <p className="detuserid">User Id : <span>{userData._id}</span> </p> */}
-                                            <p className="detname">Name : <span>Himanshu Kothari</span> </p>
-                                            <p className="detemail">Roll no : <span>21CE1376</span> </p>
+                                            <p className="detname">Name : <span>Student_Name</span> </p>
+                                            <p className="detemail">Roll no : <span>10001</span> </p>
                                             <p className="detphone">Semester : <span>III</span> </p>
                                             <p className="detphone">Department : <span>CE</span> </p>
-                                            <p className="detwork">Attendance : <span>78%</span></p>
+                                            <p className="detwork">Attendance : <span>{"78% example"}</span></p>
                                         </div>
                                     </form>
                                 </div>

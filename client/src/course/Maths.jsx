@@ -16,9 +16,9 @@ const Maths = () => {
                 <div className="cpin">
                     <div className="cpleft">
                         <div className="allcontents">
-                            <a href="/mathslec">Lecture PPTs</a>
-                            <a href="/mathsvids">Video lectures</a>
-                            <a href="/mathsnotes">Notes</a>
+                            <a href="/em3/lecppt">Lecture PPTs</a>
+                            <a href="/em3/vidlec">Video lectures</a>
+                            <a href="/em3/notes">Notes</a>
                         </div>
                     </div>
                     <div className="cpright">

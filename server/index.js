@@ -14,27 +14,34 @@ mongoose.connect(db).then(() => { console.log("Connection successful") }).catch(
 
 app.use(bodyParser.json()) // for parsing application/json
 
-const studentSchema = mongoose.Schema({
-    name: { type: String, required: true },
-    rollno: { type: String, required: true },
-    sem: { type: String, required: true },
-    department: { type: String }
-})
+////////////////////////////////////////////////////////////
 
+//STUDENT FETCHING / ADDING
+
+const studentSchema = mongoose.Schema(
+    {
+        name: { type: String, required: true },
+        rollno: { type: String, required: true },
+        sem: { type: String, required: true },
+        department: { type: String }
+    }
+)
 
 const student = mongoose.model("student", studentSchema);
 
 app.post('/newstudent', (req, res) => {
 
-    const { name, rollno, sem, department } = req.body
+    const { name, rollno, sem, department } = req.body;
 
     const someone = new student({
         name, rollno, sem, department
     })
+
     someone.save().then(() => {
+        console.log()
         res.status(200).json({ message: "Student added successfully" })
     }).catch((err) => {
-        console.log(err);
+        console.log(err)
         res.status(400).json({ error: "Student not added" })
     })
 })
@@ -61,6 +68,10 @@ const attendanceSchema = new Schema({
     }
 });
 
+////////////////////////////////////////////////////////////
+
+//ATTENDANCE TAKING
+
 const Attendance = mongoose.model('Attendance', attendanceSchema);
 
 app.post('/attendance', (req, res) => {
@@ -86,8 +97,58 @@ app.get('/attendance', async (req, res) => {
         res.status(500).json({ message: 'Error fetching attendance' });
     }
 });
+
 ////////////////////////////////////////////////////////////
 
-app.listen(port, () => {
-    console.log(`Listening at port : ${port}`)
+//SUBJECT FECTHING FOR STUDENTS 
+
+const resourceSchema = mongoose.Schema(
+    {
+        subject: { type: String, required: true },
+        type: { type: String, required: true },
+        title: { type: String, required: true },
+        teacher: { type: String, required: false },
+        link: { type: String }
+    }
+)
+
+const resource = mongoose.model("resource",resourceSchema);
+
+app.get("/resources", async (req,res)=>{
+    const allResources = await resource.find({})
+
+    res.status(200).json(allResources)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ////////////////////////////////////////////////////////////
+
+    //SERVER STARTED
+
+    app.listen(port, () => {
+        console.log(`Listening at port : ${port}`)
+    })

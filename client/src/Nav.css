@@ -1,4 +1,3 @@
-
 .nav {
     height: 7vh;
     width: 100%;
@@ -70,9 +69,10 @@
 
     .nav {
         align-items: center;
-        height: 10vh;      
+        height: 10vh;
         z-index: 13;
     }
+
     .nav>.nav-btn>label {
         display: inline-block;
         width: 50px;
@@ -104,8 +104,10 @@
         overflow-y: hidden;
         top: 10vh;
         left: 0px;
+        overflow-x: hidden;
+
     }
-    
+
     .nav>.nav-links>a {
         display: block;
         z-index: 13;

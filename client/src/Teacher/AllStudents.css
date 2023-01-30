@@ -10,7 +10,34 @@
 .stspage h2 {
     text-align: center;
     color: white;
-    
+
+}
+
+.tpage {
+
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding: 60px;
+    /* background-color: red; */
+    justify-content: center;
+}
+
+
+
+.tleft {
+    display: flex;
+    /* background-color: blue; */
+    width: 45%;
+}
+
+.tright {
+
+    display: flex;
+    /* background-color: aqua; */
+    width: 50%;
+
+    justify-content: center;
 }
 
 .stlist {
@@ -52,7 +79,7 @@
     background: #0e1424;
     background: linear-gradient(63deg, #0e1424 0%, #22325c 100%);
     width: 100%;
-    padding: 15px;
+    padding:15px 25px;
 
     color: white;
     outline: none;
@@ -93,6 +120,10 @@
 }
 
 
+.tleft img{
+    filter: grayscale(100%);
+}
+
 
 .stcard {
     display: flex;
@@ -125,9 +156,10 @@
         margin: 25px;
     }
 
-    .stspage h2{
+    .stspage h2 {
         margin-bottom: 40px;
     }
+
     .stlist {
         display: flex;
         flex-direction: column;
@@ -157,6 +189,24 @@
         border-bottom: 3px white solid;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
+    }
+
+
+    .tpage {
+
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 10px;
+        /* background-color: red; */
+        justify-content: space-around;
+    }
+
+    .tleft{
+        width: 100%;
+    }
+    .tright{
+        width: 100%;
     }
 
 

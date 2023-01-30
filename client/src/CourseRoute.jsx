@@ -15,10 +15,10 @@ const Course = (props) => {
             <>
                 <Nav />
                 <Maths/>
-
             </>
         )
     }
+
     if (props.cname === "ds") {
 
         return (
@@ -29,6 +29,7 @@ const Course = (props) => {
             </>
         )
     }
+
     if (props.cname === "beld") {
 
         return (
@@ -38,6 +39,7 @@ const Course = (props) => {
             </>
         )
     }
+    
     if (props.cname === "coa") {
 
         return (

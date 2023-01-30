@@ -1,19 +1,34 @@
-.container {
+.attendanceCont {
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 10px;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.attInner {
+    width: 60%;
+}
+
+.OptInp {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .label {
     font-weight: bold;
     margin-bottom: 5px;
     color: white;
+
 }
 
-.optionlabel{
+.optionlabel {
     color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .select-box {
@@ -41,7 +56,8 @@
 }
 
 .table-header {
-    background-color: gray;
+    /* background-color: gray; */
+
     color: white;
 }
 
@@ -58,26 +74,7 @@
     cursor: pointer;
 }
 
-
-.btn-present {
-    background-color: green;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-
-.btn-absent {
-    background-color: red;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-
-.optionlabel{
+.optionlabel {
     color: white;
 }
 
@@ -86,40 +83,127 @@
     width: 100%;
     margin: 20px auto;
     padding: 10px;
+
+
+    background: #0e1424;
+    background: linear-gradient(63deg, #0e1424 0%, #22325c 100%);
+    margin-top: 70px;
+
+}
+
+.attendanceCont .table-header,
+.attendanceCont table {
+    border-radius: 10px;
+
+}
+
+
+
+.attendanceCont select {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #070e16;
+
+
+
+    background: #0e1424;
+    background: linear-gradient(63deg, #0e1424 0%, #22325c 100%);
+    color: white;
+}
+
+.attendanceCont select option {
+    /* background-color: #070e16; */
+
+    background: rgb(26, 45, 85);
+    display: flex;
+    /* background: linear-gradient(180deg, rgba(26, 45, 85, 1) 0%, rgb(25, 60, 134) 100%); */
+    color: white;
+}
+
+
+.attendanceCont input[type="date"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+
+
+
+    background: #0e1424;
+    background: linear-gradient(63deg, #0e1424 0%, #22325c 100%);
+    color: white;
+}
+
+.attendanceCont input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #fff;
+    /* color: rgb(255, 0, 0); */
+}
+
+
+
+
+.attendanceCont .switch {
+    --false: #E81B1B;
+    --true: #009068;
+    display: flex;
+    justify-content: center;
+}
+
+.attendanceCont input[type=checkbox] {
+    appearance: none;
+    height: 2rem;
+    width: 3.5rem;
+    background-color: #fff;
+    position: relative;
+    border-radius: .2em;
+    cursor: pointer;
+}
+
+.attendanceCont input[type=checkbox]::before {
+    content: '';
+    display: block;
+    height: 80%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: calc(1.9em/2 + .3em);
+    background-color: var(--false);
+    border-radius: .2em;
+    transition: .15s ease;
+}
+
+.attendanceCont input[type=checkbox]:checked::before {
+    background-color: var(--true);
+    left: calc(100% - (1.9em/2 + .3em));
+}
+
+.btnsub{
+    width: 100%;
+    display: flex;
+    justify-content:center ;
+}
+
+.SubmitAttBTN {
+    padding: 5px 15px;
+    font-family: 'Baloo Bhai 2';
+    font-size: 20px;
+    color: #22325c;
+    font-weight: 700;
+    border-radius: 5px;
 }
 
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
     }
+
+    .table-attendance {
+        font-size: 12px;
+    }
+
+    .attInner {
+        width: 90%;
+    }
 }
-
-
-select {
-    padding: 8px 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #333;
-    color: white;
-}
-
-select option {
-    background-color: #333;
-    color: white;
-}
-
-
-input[type="date"] {
-    padding: 8px 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #333;
-    color: white;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-    background-color: #fff;
-    color: rgb(255, 0, 0);
-}
-
-

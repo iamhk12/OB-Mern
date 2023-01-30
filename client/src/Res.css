@@ -1,0 +1,40 @@
+.respage {
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+
+    justify-content: center;
+}
+
+.listOfResources h3 {
+    margin: 30px;
+    text-align: center;
+}
+
+.listOfResources {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #1a2d55;
+    background: #0e1424;
+    background: linear-gradient(63deg, #0e1424 0%, #22325c 100%);
+    color: white;
+    margin-top: 100px;
+    border-radius: 20px;
+
+
+}
+
+.resource-card {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: center;
+    /* border-top: #dadada 1px solid; */
+}
+
+@media screen and (max-width:1080px) {
+    .listOfResources {
+        width: 80%;
+    }
+}
