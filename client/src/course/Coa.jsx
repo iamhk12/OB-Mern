@@ -23,21 +23,22 @@ const Coa = () => {
                     </div>
                     <div className="cpright">
                         <div className="rightin">
-                                <div className="ann">
-                                    <h3>Announcements</h3>
-                                    <div className="annin">
-                                        <hr />
-                                        <hr />
-                                        <hr />
-                                        <hr />
-                                        <hr />
-                                        <hr />
-                                    </div>
+                            <div className="ann">
+                                <h3>Announcements</h3>
+                                <div className="annin">
+                                    <hr />
+                                    <hr />
+                                    <hr />
+                                    <hr />
+                                    <hr />
+                                    <hr />
                                 </div>
-
-                                <button className='inbtn blueclr'>
+                            </div>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScBZjAvC6SRdDbWz_19rdJXcQ0n1Juz0Gxwkn93DFE596ljPg/viewform" target="_blank" rel="noreferrer">
+                                <button className='inbtn blueclr'> 
                                     ASK A DOUBT
                                 </button>
+                            </a>
 
                         </div>
                     </div>

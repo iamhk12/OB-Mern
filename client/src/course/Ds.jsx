@@ -35,9 +35,11 @@ const Ds = () => {
                                     </div>
                                 </div>
 
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScBZjAvC6SRdDbWz_19rdJXcQ0n1Juz0Gxwkn93DFE596ljPg/viewform" target="_blank" rel="noreferrer">
                                 <button className='inbtn blueclr'>
                                     ASK A DOUBT
                                 </button>
+                            </a>
 
                         </div>
                     </div>
