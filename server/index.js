@@ -3,7 +3,7 @@ const mongoose = require("mongoose")
 const app = express();
 const bodyParser = require('body-parser')
 let port = 5000;
-const db = "mongodb+srv://iamhk12:iamhk12@cluster0.ujtpsbf.mongodb.net/OB"
+const db = "mongodb+srv://iamhk12:<password>@cluster0.ujtpsbf.mongodb.net/OB"
 const router = express.Router();
 const cors = require('cors')
 
