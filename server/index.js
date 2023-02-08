@@ -123,8 +123,7 @@ app.get("/resources", async (req,res)=>{
 })
 
 
-
-
+module.exports.handler = serverless(app);
 
 
 
@@ -151,6 +150,6 @@ app.get("/resources", async (req,res)=>{
 
     //SERVER STARTED
 
-    app.listen(port, () => {
-        console.log(`Listening at port : ${port}`)
-    })
+//     app.listen(port, () => {
+//         console.log(`Listening at port : ${port}`)
+//     })
