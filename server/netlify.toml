@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build"
+  functions = "functions"
+
+[build.environment]
+  MONGO_URI = "mongodb+srv://iamhk12:iamhk12@cluster0.ujtpsbf.mongodb.net/OB"
