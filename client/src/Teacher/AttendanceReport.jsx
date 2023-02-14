@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Navt from "./Navt"
+// import Navt from "./Navt"
 
 const AttendanceReport = () => {
   const [attendanceData, setAttendanceData] = useState([]);
